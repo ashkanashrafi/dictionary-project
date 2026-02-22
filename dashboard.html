@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="dashboard">
+        <h1 id="welcome"></h1>
+        <p id="score"></p>
+        <hr>
+        
+
+        <div>
+            Search: <input id="searchword" type="text">
+            <button onclick="searchWord()">Search</button>
+        </div>
+
+        <div id="result">
+            <ul id="list-result">
+                <li>
+                    <h2 id="word"></h2>
+                </li>
+                <li>
+                    <p id="phonetic"></p>
+                </li>
+                <li><audio id="audio" controls></audio></li>
+                <li>
+                    <p id="meaning"></p>
+                </li>
+                <li>
+                    <p id="example"></p>
+                </li>
+            </ul>
+            
+            <button id="addWordBtn" onclick="addWord()">Add to My Words</button>
+            <a id="translate" href="https://translate.google.com/?hl=fa&sl=auto&tl=fa&op=translate"
+                target="_blank">search in google</a>
+                
+        </div>
+        
+
+        <hr>
+
+        
+    </div>
+
+    </div>
+    <h3>Your Words:</h3>
+        <div style="overflow: scroll;display: inline-block;">
+            <table id="wordsTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Word</th>
+                        <th>Meaning</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody id="wordsBody"></tbody>
+            </table>
+        </div>
+    
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
